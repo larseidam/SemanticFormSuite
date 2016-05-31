@@ -23,7 +23,9 @@
     "rewriteTsconfig": true
   },
   "files": [
-    "./dev/app.component.ts",
-    "./dev/boot.ts"
+    "./dev/boot.ts",
+    "./dev/configuration-loader/configuration-loader.component.ts",
+    "./dev/formular/formular.component.ts",
+    "./dev/sematicFormSuite.component.ts"
   ]
 }

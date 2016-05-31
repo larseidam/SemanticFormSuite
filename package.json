@@ -1,6 +1,6 @@
 {
-  "name": "angular2-boilerplate",
-  "version": "1.0.0",
+  "name": "sematic-form-suite",
+  "version": "0.1.0",
   "scripts": {
     "lite": "lite-server",
     "gulp": "gulp",
