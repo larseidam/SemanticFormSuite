@@ -6,7 +6,7 @@ import {ConfigurationLoader} from './configurationLoader/configurationLoader.com
 import {Formular} from './formular/formular.component';
 
 @Component({
-    selector: 'sematic-form-suite',
+    selector: 'sematicFormSuite',
     templateUrl: `app/sematicFormSuite.component.html`,
     directives: [ROUTER_DIRECTIVES]
 })
