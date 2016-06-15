@@ -1,0 +1,11 @@
+<h3>Configuration Loader</h3>
+<div>
+    <p>
+        <button type="button" class="btn btn-primary btn-sm" (click)="mode = 'file'">Datei laden</button>
+        <button type="button" class="btn btn-primary btn-sm" (click)="mode = 'sparql'">SPARQL-EndPoint</button>
+        <button type="button" class="btn btn-primary btn-sm" (click)="mode = 'direct'">Direkteingabe</button>
+    </p>
+</div>
+<div>
+    <configurationLoaderFile *ngIf="mode === 'file'"></configurationLoaderFile>
+</div>
