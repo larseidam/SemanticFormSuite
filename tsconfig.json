@@ -25,6 +25,7 @@
   "files": [
     "./dev/boot.ts",
     "./dev/configurationLoader/configurationLoader.component.ts",
+    "./dev/configurationLoader/configurationLoader.service.ts",
     "./dev/configurationLoader/configurationLoaderFile.component.ts",
     "./dev/formular/formular.component.ts",
     "./dev/sematicFormSuite.component.ts"
