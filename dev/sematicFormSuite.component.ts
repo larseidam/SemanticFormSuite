@@ -7,18 +7,7 @@ import {Formular} from './formular/formular.component';
 
 @Component({
     selector: 'sematic-form-suite',
-    template: `
-        <h1>Semantic Form Suite</h1>
-        <header>
-            <nav>
-                <a [routerLink]="['ConfigurationLoader']">Configuration-Loader</a>
-                <a [routerLink]="['Formular']">Formular</a>
-            </nav>
-        </header>
-        <div class="main">
-            <router-outlet></router-outlet>
-        </div>
-    `,
+    templateUrl: `app/sematicFormSuite.component.html`,
     directives: [ROUTER_DIRECTIVES]
 })
 @RouteConfig([
