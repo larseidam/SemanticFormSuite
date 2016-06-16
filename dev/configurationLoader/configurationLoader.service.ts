@@ -1,12 +1,13 @@
 // external libaries
 declare var jsonld: any;
-//declare var rdf: any;
 
 import {Injectable} from "angular2/core";
 
+import {FormularConfiguration} from "./../formular/formularConfiguration";
+
 @Injectable()
 export class ConfigurationLoaderService {
-    public configuration
+    public formularConfiguration:FormularConfiguration = new FormularConfiguration();
 
     readFile(file:File) {
         return new Promise(function (fulfill, reject){
@@ -28,10 +29,11 @@ export class ConfigurationLoaderService {
     }
 
     loadFile(file: File) {
-
         this.readFile(file).then(res => {
-        	console.log(res);
+            var promises = jsonld.promises;
+            return promises.fromRDF(res, {format: 'application/nquads'})
+        }).then(res => {
+            this.formularConfiguration.addSource(res);
         });
-        return "";
     }
 }
