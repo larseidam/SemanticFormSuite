@@ -1,10 +1,7 @@
 import {FormularConfigurationInterface} from "./formularConfiguration.interface";
 
 export class FormularConfiguration implements FormularConfigurationInterface {
-    sources: null;
-    constructor() {
-        this.sources = [];
-    }
+    sources: Object[] = [];
 
     public addSource(source: {}) {
         this.sources.push(source);
