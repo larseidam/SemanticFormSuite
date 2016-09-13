@@ -28,6 +28,7 @@
     "./dev/configurationLoader/configurationLoader.service.ts",
     "./dev/configurationLoader/configurationLoaderFile.component.ts",
     "./dev/formular/formular.component.ts",
+    "./dev/formular/formular.service.ts",
     "./dev/formular/formularConfiguration.interface.ts",
     "./dev/formular/formularConfiguration.ts",
     "./dev/sematicFormSuite.component.ts"

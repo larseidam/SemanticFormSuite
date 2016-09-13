@@ -1,4 +1,5 @@
 import {Component} from "angular2/core";
+import {FormularService} from "./../formular/formular.service";
 import {ConfigurationLoaderService} from "./configurationLoader.service";
 
 @Component({
@@ -8,7 +9,7 @@ import {ConfigurationLoaderService} from "./configurationLoader.service";
 })
 export class ConfigurationLoaderFile {
 
-    constructor(private _configurationLoaderService: ConfigurationLoaderService) {}
+    constructor(private _configurationLoaderService:ConfigurationLoaderService) {}
 
     onChange($event) {
         this._configurationLoaderService.loadFile($event.target.files[0]);
