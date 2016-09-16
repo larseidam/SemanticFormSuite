@@ -1,17 +1,19 @@
 import {Injectable} from "angular2/core";
 
 import {FormularConfiguration} from "./formularConfiguration";
+import {Generator} from "./../generator/generator";
 
 @Injectable()
 export class FormularService {
 
-    public formularConfiguration: FormularConfiguration = new FormularConfiguration();
+    private _formularConfiguration: FormularConfiguration = new FormularConfiguration();
+    private _formularGenerator: Generator = new Generator(this._formularConfiguration);
 
     getFormularConfiguration() {
-        return this.formularConfiguration;
+        return this._formularConfiguration;
     }
 
     loadFormularConfiguration() {
-        console.log(this.formularConfiguration.getSources());
+        this._formularGenerator.analyseSources();
     }
 }
