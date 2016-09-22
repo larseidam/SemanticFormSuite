@@ -17,7 +17,6 @@ export class Generator {
             if (resource['@type'][0] == "http://www.w3.org/2002/07/owl#ObjectProperty") {
                 var labelValue: String = "";
                 resource['http://www.w3.org/2000/01/rdf-schema#label'].forEach(label => {
-                    console.log(label);
                     if ('de' === label['@language']) {
                         labelValue = label['@value'];
                     } else if ('' === labelValue) {

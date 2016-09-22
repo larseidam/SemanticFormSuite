@@ -35,4 +35,11 @@ export class ConfigurationLoaderService {
             this._formularService.getFormularConfiguration().addSource(res);
         });
     }
+
+    loadString(jsonLDStr: String) {
+        var promises = jsonld.promises;
+        return promises.fromRDF(jsonLDStr, {format: 'application/nquads'}).then(res => {
+            this._formularService.getFormularConfiguration().addSource(res);
+        });
+    }
 }
